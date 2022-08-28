@@ -1,0 +1,157 @@
+.button {
+  font-family: "Muli", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 18px 30px;
+  border-radius: 35px;
+  color: $text-color;
+  transition: all $transition-duration;
+  background-color: $primary-color;
+  letter-spacing: 0.8px;
+
+  border-color: $primary-color;
+  min-height: 50px;
+  border: 1px solid;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $background-color;
+    border-color: $primary-color;
+    color: $text-color;
+    transition: all $transition-duration;
+    color: $primary-color;
+  }
+}
+
+.button-request {
+  margin-right: 18px;
+}
+
+.button-apply {
+  background-color: $primary-color;
+  color: $text-color;
+}
+
+.header__buttons .button-apply {
+  position: fixed;
+  z-index: 10;
+  min-width: 100%;
+  bottom: 0;
+  left: 0;
+  border-radius: 0;
+  height: 79px;
+
+  @include tablet-large {
+    display: block;
+    margin-right: 0;
+    min-width: 140px;
+    position: static;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 35px;
+    height: 60px;
+  }
+}
+.header__buttons .button-request {
+  display: none;
+  @include tablet-large {
+    display: block;
+    min-width: 224px;
+    flex-grow: 1;
+    flex-shrink: 0;
+  }
+}
+
+.hero__buttons {
+  z-index: 10;
+  margin-left: 18px;
+  position: fixed;
+  left: -18px;
+  bottom: 0;
+  width: 100%;
+
+  @include tablet {
+    position: relative;
+    top: 6px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    z-index: 1;
+  }
+}
+
+.hero__buttons .button-apply {
+  border-radius: 0;
+  border-right: $text-color 1px solid;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 500;
+  position: fixed;
+
+  @include tablet-large {
+    margin-right: 18px;
+    border-radius: 35px;
+    width: auto;
+    position: relative;
+  }
+}
+.hero__buttons .button-request {
+  display: none;
+
+  @include tablet-large {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    display: block;
+    border-radius: 35px;
+    padding: 17px 36px;
+  }
+}
+
+.button-mobile {
+  display: block;
+  border-radius: 0;
+  background-color: $primary-color;
+  color: $text-color;
+  padding: 0 62px;
+
+  @include tablet-large {
+    display: none;
+  }
+}
+
+.button-scroll-to {
+  display: none;
+  transition-duration: $transition-duration;
+
+  @include tablet {
+    background-color: $color-black;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -35px;
+    z-index: 10;
+    position: relative;
+    color: #fff;
+    padding: 12px 5px 5px;
+  }
+
+  &:hover,
+  &:focus {
+    transform: translateY(10px);
+    transition-property: transform;
+    transition-duration: $transition-duration;
+  }
+}
+
+.button-up {
+  position: relative;
+  z-index: 10;
+  margin-bottom: -35px;
+}

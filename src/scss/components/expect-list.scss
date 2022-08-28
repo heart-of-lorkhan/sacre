@@ -1,0 +1,130 @@
+.expect-list {
+  padding-top: 36px;
+  padding-bottom: 12px;
+
+  .container {
+    max-width: 1640px;
+  }
+}
+
+.expect-list .section-title {
+  margin-bottom: 32px;
+  color: $color-orange;
+
+  @include tablet {
+    font-size: 32px;
+    margin-bottom: 64px;
+  }
+}
+
+.expectlist-wrap__text {
+  color: $color-orange;
+  font-size: 14px;
+
+  @include tablet {
+    font-size: 20px;
+  }
+
+  @include desktop {
+    font-size: 24px;
+  }
+}
+
+.exspectlist-wrap {
+  width: 150px;
+  min-height: 170px;
+
+  @include desktop {
+    width: 310px;
+    min-height: 395px;
+  }
+}
+.expect-list {
+  @include tablet {
+    padding-top: 69px;
+    padding-bottom: 72px;
+  }
+}
+.expectlist {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -12px;
+
+  @include tablet {
+    justify-content: center;
+  }
+}
+
+.expectlist-wrap.card-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 170px;
+  width: 100%;
+
+  @include tablet {
+    padding: 55px 20px 40px;
+    min-height: 360px;
+  }
+
+  @include tablet-large {
+    padding: 55px 41px 40px;
+  }
+
+  @include desktop {
+    min-height: 395px;
+  }
+}
+
+.expect-list {
+  background-color: $background-color;
+}
+
+.expectlist {
+  list-style-type: none;
+  margin: 0 -11px;
+  @include tablet {
+    margin: 0 -22px;
+  }
+}
+
+.expectlist li {
+  width: calc(100% / 2);
+  padding-left: 12px;
+  padding-right: 12px;
+  margin-bottom: 24px;
+
+  @include tablet {
+    width: calc(100% / 3);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @include desktop {
+    width: calc(100% / 4);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.expectlist-wrap__img {
+  width: 64px;
+  height: 64px;
+
+  @include tablet {
+    width: 160px;
+    height: 160px;
+  }
+
+  @include desktop {
+    width: 220px;
+    height: 172px;
+  }
+}
+.expectlist-wrap img {
+  margin-bottom: 14px;
+
+  @include tablet {
+    margin-bottom: 36px;
+  }
+}

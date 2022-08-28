@@ -1,0 +1,226 @@
+.input {
+  width: 100%;
+  height: 60px;
+  padding-left: 22px;
+  outline: 0;
+  border: none;
+  transition-duration: $transition-duration;
+  transition-property: background-color;
+  color: $primary-color;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 31px;
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: rgba(255, 255, 255, 0.8);
+    transition-duration: $transition-duration;
+    transition-property: background-color;
+  }
+}
+
+.input::placeholder {
+  font-size: 18px;
+  font-weight: 700;
+  color: $primary-color;
+  letter-spacing: 0;
+  margin-left: 60px;
+}
+
+.input-upload {
+  display: none;
+}
+
+.label-upload {
+  display: flex;
+  flex-direction: column;
+  color: $text-color;
+  font-size: 16px;
+  font-weight: 900;
+  padding: 47px 35px;
+  align-items: center;
+  width: 100%;
+  border: none;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 26px;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-duration: $transition-duration;
+  letter-spacing: -0.4px;
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: rgba(255, 255, 255, 0.7);
+    transition-property: background-color;
+    transition-duration: $transition-duration;
+  }
+
+  @include tablet {
+    width: 100%;
+    max-height: 151px;
+    justify-content: center;
+    margin-bottom: 44px;
+  }
+}
+
+.label-bold {
+  font-size: 20px;
+  font-weight: 900;
+  margin-bottom: 0;
+
+  @include tablet {
+    margin-bottom: 16px;
+  }
+}
+
+.label {
+  color: $text-color;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 12px;
+  display: inline-block;
+
+  @include tablet {
+    font-size: 16px;
+  }
+}
+
+.checkbox {
+  display: flex;
+  font-size: 12px;
+
+  @include tablet {
+    font-size: 16px;
+    text-transform: none;
+  }
+}
+
+.input-checkbox {
+  width: 27px;
+  height: 27px;
+  border-radius: 5px;
+  margin-right: 15px;
+  flex-shrink: 0;
+}
+
+.form-cv {
+  z-index: 1;
+  position: relative;
+  margin: 0 auto;
+
+  @include tablet {
+    max-width: 920px;
+    padding: 0 144px;
+    margin-bottom: 0;
+  }
+}
+
+.form-input {
+  margin-bottom: 18px;
+
+  @include tablet {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.form__group {
+  margin-bottom: 28px;
+
+  @include tablet {
+    margin-bottom: 30px;
+  }
+}
+
+.form__button-apply .button-apply {
+  display: inline-block;
+  position: static;
+  text-align: center;
+  border-radius: 26px;
+  font-weight: 800;
+  padding: 13px 12px;
+  min-width: 168px;
+  height: auto;
+  margin: 0 auto;
+  font-size: 16px;
+  text-transform: none;
+  letter-spacing: 0.8px;
+  border: 2px solid $background-color;
+
+  @include tablet {
+    padding: 11px 25px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $background-color;
+  }
+}
+
+.form-col {
+  width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.form-col-2 {
+  width: 100%;
+  padding-right: 12px;
+  padding-left: 12px;
+
+  @include tablet {
+    width: 50%;
+  }
+}
+
+.form-row {
+  margin-right: -16px;
+  margin-left: -16px;
+  padding-right: 16px;
+  padding-left: 16px;
+
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.form__checkbox {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-top: 8px;
+  margin-bottom: 42px;
+
+  @include tablet {
+    margin-bottom: 64px;
+  }
+}
+
+.form__button-apply {
+  display: flex;
+  justify-content: center;
+  box-shadow: none;
+  margin-bottom: 24px;
+
+  @include tablet-large {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+}
+
+.form__button-apply .button-apply {
+  box-shadow: none;
+}
+
+.form-button-request {
+  margin-top: 40px;
+
+  @include tablet {
+    margin-top: 0;
+  }
+}

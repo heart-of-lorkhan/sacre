@@ -1,0 +1,17 @@
+extends pug/base
+
+prepend vars
+  //-
+  - title = 'Style Acre'
+
+append vars
+  //-
+
+block content
+  main.main
+    include ./pug/components/hero.pug
+    include ./pug/components/section-infolist.pug
+    include ./pug/components/section-advantage.pug
+    include ./pug/components/section-expect-list.pug
+    include ./pug/components/section-benefits.pug
+    include ./pug/components/section-mission.pug
